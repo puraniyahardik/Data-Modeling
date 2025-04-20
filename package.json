@@ -1,16 +1,18 @@
 {
   "name": "data-modeling",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "mongoose": "^8.13.2"
   },
   "devDependencies": {
